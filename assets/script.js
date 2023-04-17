@@ -1,6 +1,6 @@
 var map;
 window.onload = function () {
-  fetch("./assests/sightings.json")
+  fetch("./assets/sightings.json")
     .then((response) => response.json())
     .then((data) => {
       var apiKey = "70fdM0ulzAz6u7ykcfFXFUgAkVIzirTB";
