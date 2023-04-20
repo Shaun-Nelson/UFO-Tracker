@@ -147,7 +147,7 @@ window.onload = function () {
           draggable: false,
         })
           .bindPopup(
-            `<b>Date:</b> ${sighting.date_time}<br><b>Description:</b> ${sighting.text}`
+            `<b>Date:</b> ${sighting.date_time} <br><b>Shape:</b> ${sighting.shape}<br><b>Description:</b> ${sighting.text}`
           )
           .addTo(map);
       });
