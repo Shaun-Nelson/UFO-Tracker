@@ -21,6 +21,7 @@ label {
 
 h1 {
   color: white;
+  
 }
 
 form {
@@ -28,7 +29,4 @@ form {
   margin-bottom: 5%;
 }
 
-/* #cardContainer {
-  display: flex;
-} */
 
