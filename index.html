@@ -1,38 +1,84 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Find UFO HomePage</title>
-  <link rel="stylesheet" href="./assets/style.css">
-  <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-
-    
+<title>FindU Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="./assets/style.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
 </head>
-<body>
-  
-  
-  <ul class="nav nav-pills nav-justified">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" href="./service.html">UFO Sightings</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" href="./contact.html">Contact US</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" href="./video.html">Youtube Videos</a>
-    </li>
-  </ul>
-  
+<body class="light-grey">
+<div class="w3-content" style="max-width:1400px">
+<header class="w3-container w3-center w3-padding-32">
+  <h1><strong><b>FindU</b></strong></h1>
+  <p>Welcome to FindU! The world's best <span class="w3-tag">UFO Tracking Site</span></p>
+</header>
+<div class="w3-row">
+<div class="navbar">
+  <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="service.html"><i class="fa fa-fw fa-map"></i> Map</a>
+  <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  <a href="video.html"><i class="fa fa-fw fa-watch"></i> Videos</a>
+</div>
+<div class="w3-col l8 s12">
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="https://www.narcity.com/media-library/a-ufo-taking-off.jpg?id=32009596&width=1245&height=700&quality=85&coordinates=0%2C215%2C0%2C216" alt="flying-saucer" style="width:100%">
+    <div class="w3-container">
+      <h3><b>OUR OBJECTIVE</b></h3>
+    </div>
+    <div class="project-description">
+      <p>The objective of our project is to give you, the user, the ability to keep track, and stay updated on all of the latest ufo sightings (as of 2022).
+        We try to keep our minds and eyes open, especially late at night when the aliens least expect it... When the map is opened, you can take a look at the many points of interests laid
+        out on the map. Each point of interest will have a date, location, and description on the events that took place during the siting.
+        So far we have managed to populate Thousands of sightings are reported every month, with every submission sent our way, we are one step
+        closer to proving the existence of extraterrestrial life, all thanks to our amazing community! <br> <br>If you would like to help support
+    our community, share you findngs with us through our contact page.</p>
+      <div class="w3-row">
+        <div class="contact-us-button">
+          <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.location.href='contact.html'"><b>CONTACT US »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="https://media.istockphoto.com/id/1226020103/video/circuit-board-background-copy-space-green-loopable-animation-computer-data-technology.jpg?b=1&s=640x640&k=20&c=uzVLEkiUowhDLr_xFm98DE_2KtGzRL_s6Ft7NxycpMg=" alt="Circuitry" style="width:100%">
+    <div class="files-description">
+      <h3><b>UNDER THE HOOD</b></h3>
+    </div>
+    <div class="w3-container">
+      <p>To get our project up and running we combined a few key components such as...</p> <br>
+      <ul>
+        <li>MapQuest API: An API that we can use to access a map of the world; this enables us to link a JSON file which we use to populate the map with different sightings and data points. The data points act as markers to indicate where sightnings took place. </li>
+        <li>A geocode API: The Geocode API helps us identify sighting locations as accurately as possible; From country, to state, to city, all the way down to the exact coordinates.</li>
+        <li>A bootstrap plugin: Allows us to store the data submitted by other users to a local database, where they can log in to access the the web app and report sightings.</li> <br>
+        <p>Click the link below to check out our tracker map.</map></p>
+     </ul>
+        </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.location.href='service.html'"><b>UFO TRACKER »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="w3-card w3-margin w3-margin-top">
+    <div class="w3-container w3-white">
+      <h4><b>GROUP MEMBERS</b></h4>
+      <p>This project was created by the members of group 7; Liban Duale Alice Liu, Shaun Nelson, and Matthew Witter.</p>
+    </div>
+  </div><hr>
+</div>
 </body>
 </html>
