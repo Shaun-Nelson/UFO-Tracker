@@ -11,6 +11,7 @@ ps.on("change", (e) => {
     if (markerIndex === e.resultIndex) {
       markers = [marker];
       marker.setOpacity(1);
+      //sets view of map according to search result
       map.setView(e.result.latlng, 11);
     } else {
       removeMarker(marker);
@@ -23,6 +24,7 @@ ps.on("results", (e) => {
   markers = [];
 
   if (e.results.length === 0) {
+    //resets map view
     map.setView(new L.LatLng(0, 0), 2);
     return;
   }
@@ -45,6 +47,7 @@ ps.on("cursorchanged", (e) => {
 
 ps.on("clear", () => {
   console.log("cleared");
+  //resets map view
   map.setView(new L.LatLng(0, 0), 2);
   markers.forEach(removeMarker);
 });
