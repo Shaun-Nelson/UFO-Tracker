@@ -24,30 +24,48 @@ contactSubmit.addEventListener("click", function (event) {
     displayCustomer(FN,LN,EM);
 });
 
-var displayCustomer = function (firstname, lastname, emailAddress) {
+var displayCustomer = function (firstname,lastname,emailAddress) {
+    var card = $("<div>")
+    card.addClass("card text-bg-secondary mb-3")
+    card.css('max-width', '18rem')
 
+    var cardBody = $("<div>")
+    cardBody.addClass("card-body")
+
+    var name = $("<h5>")
+    name.addClass("card-title")
+    name.text(firstname+" "+lastname)
+
+    var email = $("<p>")
+    email.addClass("card-text")
+    email.text(emailAddress)
+
+    cardBody.append(name)
+    cardBody.append(email)
+    card.append(cardBody)
+    cardContainer.append(card)
 }
 
-var creatCards = function () {
-    for(var i=0; i<10; i++) {
-        var card = $("<div>")
-        card.addClass("card text-bg-secondary mb-3")
-        card.css('max-width', '18rem')
+// var creatCards = function () {
+//     for(var i=0; i<10; i++) {
+//         var card = $("<div>")
+//         card.addClass("card text-bg-secondary mb-3")
+//         card.css('max-width', '18rem')
 
-        var cardBody = $("<div>")
-        cardBody.addClass("card-body")
+//         var cardBody = $("<div>")
+//         cardBody.addClass("card-body")
 
-        var name = $("<h5>")
-        name.addClass("card-title")
+//         var name = $("<h5>")
+//         name.addClass("card-title")
 
-        var email = $("<p>")
-        email.addClass("card-text")
+//         var email = $("<p>")
+//         email.addClass("card-text")
 
-        cardBody.append(name)
-        cardBody.append(email)
-        card.append(cardBody)
-        cardContainer.append(card)
-    }
-}
+//         cardBody.append(name)
+//         cardBody.append(email)
+//         card.append(cardBody)
+//         cardContainer.append(card)
+//     }
+// }
 
-creatCards();
+// creatCards();
