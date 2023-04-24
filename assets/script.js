@@ -1,16 +1,20 @@
 var map;
 window.onload = function () {
+  //fetches from UFO sightings database
   fetch("./assets/sightings.json")
     .then((response) => response.json())
     .then((data) => {
       var apiKey = "70fdM0ulzAz6u7ykcfFXFUgAkVIzirTB";
 
+      //create a mapquest map centred on Toronto
       L.mapquest.key = apiKey;
       map = L.mapquest.map("map", {
         center: [43.6532, -79.2832],
         layers: L.mapquest.tileLayer("map"),
         zoom: 12,
       });
+      //creates a marker for each sighting
+      //markers vary in colour and symbol depending on UFO shape
       data.forEach((sighting) => {
         var iconType;
         if (sighting.shape === "cigar") {
@@ -145,7 +149,8 @@ window.onload = function () {
         L.marker([sighting.city_latitude, sighting.city_longitude], {
           icon: iconType,
           draggable: false,
-        })
+        }) //clicking on markers opens a popup with info on date,
+          //UFO shape, and a description of the event
           .bindPopup(
             `<b>Date:</b> ${sighting.date_time} <br><b>Shape:</b> ${sighting.shape}<br><b>Description:</b> ${sighting.text}`
           )
