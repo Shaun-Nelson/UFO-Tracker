@@ -1,8 +1,8 @@
-# FindUFO
+# FindU
 
 ## Table of Contents
 
-- [FindUFO](#findufo)
+- [FindU](#findu)
   - [Table of Contents](#table-of-contents)
   - [Description](#description)
   - [GitHub Pages](#github-pages)
